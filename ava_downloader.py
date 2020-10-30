@@ -39,15 +39,15 @@ def schedule(a, b, c):
     per = 100.0 * a * b / c
     if per > 100:
         per = 100
-    print '%.2f%%' % per
+    print('%.2f%%' % per)
 
 
 # 正则匹配图片并用URLRetrieve下载
 def getImg(html, imageID, imageIndex):
     reg = r'http.*?' + imageID + r'\.jpg'
-    # print reg
     imgre = re.compile(reg)  # 编译成正则表达式变量
     imglist = re.findall(imgre, html)
+    print("imgList: ", imglist)
     for imgurl in imglist:
         print(imgurl)
         urllib.urlretrieve(imgurl, os.path.join(savePath, imageIndex + '.jpg'), schedule)
@@ -60,7 +60,7 @@ savePath = r'image'
 
 # 检查参数个数
 if len(sys.argv) < 3:
-    print 'arg error # python xxx.py beginIndex endIndex'
+    print('arg error # python xxx.py beginIndex endIndex')
     exit()
 
 
@@ -87,7 +87,9 @@ for line in f:
 
     # 得到图片网址
     imageID = line[1]
+    print("image ID: ", imageID)
     URL = URLprefix + imageID
     html = getHtml(URL)
+    print("html: ", html)
     getImg(html, imageID, imageIndex)
     print('image%s success' % imageIndex)

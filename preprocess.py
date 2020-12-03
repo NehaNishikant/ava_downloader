@@ -2,8 +2,6 @@ import os
 from PIL import Image
 from matplotlib import image
 
-#creates parsed  text file with image name and score
-
 def getLabel(target):
     avatxt = r'AVA.txt'
     f = open(avatxt)
@@ -32,7 +30,7 @@ def preprocess(data_type):
     f2 = open(fdparsed, "a")
 
     # drop everything under 300x300
-    minT = 224
+    minT = 300
     avgscore = 0
     counter = 0
     for line in f:

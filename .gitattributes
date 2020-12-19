@@ -1,0 +1,13 @@
+*.pt filter=lfs diff=lfs merge=lfs -text
+trainXVGG.pt filter=lfs diff=lfs merge=lfs -text
+trainY2.pt filter=lfs diff=lfs merge=lfs -text
+testXVGG.pt filter=lfs diff=lfs merge=lfs -text
+testY.pt filter=lfs diff=lfs merge=lfs -text
+testY2.pt filter=lfs diff=lfs merge=lfs -text
+testYVGG.pt filter=lfs diff=lfs merge=lfs -text
+trainX.pt filter=lfs diff=lfs merge=lfs -text
+trainX2.pt filter=lfs diff=lfs merge=lfs -text
+testX.pt filter=lfs diff=lfs merge=lfs -text
+testX2.pt filter=lfs diff=lfs merge=lfs -text
+trainY.pt filter=lfs diff=lfs merge=lfs -text
+trainYVGG.pt filter=lfs diff=lfs merge=lfs -text

@@ -25,7 +25,7 @@ def getLabel(target):
 
 def preprocess(data_type):
     # sequentially read from AVA_dataset/aesthetics_image_lists/fooddrink_train.jpgl
-    fdtxt = r'AVA_dataset/aesthetics_image_lists/fooddrink_'+data_type+'.txt'
+    fdtxt = r'AVA_dataset/aesthetics_image_lists/fooddrink_'+data_type+'2.txt'
     fdparsed = r'AVA_dataset/fooddrink_'+data_type+'_parsed.txt'
     savePath = r'fooddrink_imgs_'+data_type+'/'
     f = open(fdtxt, "r")
@@ -39,7 +39,7 @@ def preprocess(data_type):
         line = line.strip().split('\n')
         imgID = line[0] #imageID
         if os.path.isfile(os.path.join(savePath, imgID + '.jpg')) == True:
-            filename = 'images/'+imgID+'.jpg'
+            filename = savePath+imgID+'.jpg'
             # load image as pixel array
             data = image.imread(filename)
 
@@ -75,4 +75,5 @@ print(data)
 H = data.shape[0]'''
 
 preprocess("train")
+print("train done")
 preprocess("test")

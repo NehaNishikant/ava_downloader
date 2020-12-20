@@ -2,17 +2,17 @@
 
 See Deep_Learning_Final_Paper.pdf for all information regrading this repository
 
-Dataset Files:
-trainVGGX1.pt
-trainVGGX2.pt
-trainVGGX3.pt (split into 3 to compy with github file size constraints)
-trainVGGY.pt
-testVGGX.pt
-testVGGY.pt
+## Dataset Files:
+* trainVGGX1.pt
+* trainVGGX2.pt
+* trainVGGX3.pt (split into 3 to comply with github file size constraints)
+* trainVGGY.pt
+* testVGGX.pt
+* testVGGY.pt
 
 
-Train Files:
-pretrained.py
+## Train Files:
+* pretrained.py
 
 
 All figures in figs folder

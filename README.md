@@ -2,13 +2,8 @@
 
 See Deep_Learning_Final_Paper.pdf for all information regrading this repository
 
-## Dataset Files:
-* trainVGGX1.pt
-* trainVGGX2.pt
-* trainVGGX3.pt (split into 3 to comply with github file size constraints)
-* trainVGGY.pt
-* testVGGX.pt
-* testVGGY.pt
+## Download Dataset:
+https://drive.google.com/drive/folders/1qx0ubCfESUqwmGVhWXHW1CddQHM4C3Yr?usp=sharing 
 
 
 ## Train Files:
